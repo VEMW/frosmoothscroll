@@ -1,0 +1,78 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 8em;
+  display: grid;
+  align-content: center;
+  height: 100vh;
+}
+
+.nav__alle-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__menuitem {
+  padding: .5em;
+  background: #333;
+  margin: .5em 0;
+  text-align: right;
+  border-left: 5px solid transparent;
+  border-radius: 0 3em 3em 0;
+}
+
+.nav__menuitem:hover {
+  cursor: pointer;
+  border-left: 5px solid #fff;
+}
+
+.nav__icon {
+  color: #333;
+  margin: 0 1em;
+}
+
+.nav__menuitem.nav--actief .nav__icon {
+  color: #fff;
+}
+
+.inhoud {
+  width: 500vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  transition: margin-left . 8s ease-in-out;
+}
+
+
+.inhoud__pag {
+  height: 100vh;
+  padding: 1em 1em 1em 9em;
+  box-sizing: border-box;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.inhoud__pag--veel {
+  display: block;
+  overflow-y: auto;
+}
+
+.inhoud__afb {
+  max-width: 95%;
+}
+
+.inhoud--rood { background: red; }
+.inhoud--oranje { background: orange; }
+.inhoud--geel { background: yellow; color: #333; }
+.inhoud--groen { background: green; }
+.inhoud--blauw { background: dodgerblue; }
+.inhoud--paars { background: purple; }
+.inhoud--roze { background: pink;}
